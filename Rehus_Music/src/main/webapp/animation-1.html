@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/animation.css" type="text/css">
+	<style type="text/css">
+		
+	</style>
+</head>
+
+<body>
+	<div class="big" id="big">
+			<div id="bigbtop">
+				<div class="first">
+					<div class="first_circle_top"></div>
+					<div class="first_circle_bottom"></div>
+				</div>
+				<div class="two">
+					<div class="two_circle_top"></div>
+					<div class="two_circle_bottom"></div>
+				</div>
+				<div class="three">
+					<div class="three_circle_top"></div>
+					<div class="three_circle_bottom"></div>
+				</div>
+				<div class="four">
+					<div class="four_circle_top"></div>
+					<div class="four_circle_bottom"></div>
+				</div>
+				<div class="welcome">
+					Welcome&nbsp;&nbsp;&nbsp; to&nbsp;&nbsp;&nbsp; Remus.
+				</div>
+			</div>
+			<br>
+			<div class="img_box">
+				<img class="img_first" id="img_first" title="活力" onmouseover="To()" onmouseout="Backx()" src="img/rehue表情1.png">
+				<img class="img_two" id="img_two" title="治愈" onmouseover="To2()" onmouseout="Backx2()" src="img/rehue表情2.png">
+				<img class="img_three" id="img_three" title="伤感" onmouseover="To3()" onmouseout="Backx3()" src="img/rehue表情3.png">
+				<img class="img_four" id="img_four" title="安静" onmouseover="To4()" onmouseout="Backx4()" src="img/rehue表情4.png">
+			</div>
+			<div class="mood_box">
+				<div class="clam">
+					Clam
+				</div>
+				<div class="energetic">
+					Energetic
+				</div>
+				<div class="cure">
+					Cure
+				</div>
+				<div class="dark">
+					Dark
+				</div>
+			</div>
+			<div id="NoMood">
+				<a href="" id="NMoodx">我！莫得感情！</a>
+			</div>
+	</div>
+	<div class="body">
+	<p class="p">
+		Music + Record + Mood = Remus.
+	</p>
+	<div class="circle">
+		<span class="span1" >
+			
+		</span>
+		<span class="span2" onClick="change()">
+			
+		</span>
+		<span class="span3">
+			︶
+		</span>
+	</div>
+	</div>
+	
+		<script src="js/SignRegister.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var x=$("big").style.width;
+			x=window.innerWidth;
+			function To(){
+				$("img_first").style.transform="scale(1.5)";
+				
+			}
+			function Backx(){
+				$("img_first").style.transform="scale(1)";
+			
+			}
+			function To2(){
+				$("img_two").style.transform="rotate(1800deg)";
+				
+			}
+			function Backx2(){
+				$("img_two").style.transform="rotate(0deg)";
+			
+			}
+			function To3(){
+				$("img_three").style.transform="scale(0.5)";
+				
+			}
+			function Backx3(){
+				$("img_three").style.transform="scale(1)";
+			
+			}
+			function To4(){
+				$("img_four").style.transform="rotate(180deg)";
+				
+			}
+			function Backx4(){
+				$("img_four").style.transform="rotate(360deg)";
+			
+			}
+		</script>
+</body>
+</html>

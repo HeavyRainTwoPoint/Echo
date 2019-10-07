@@ -1,0 +1,655 @@
+#All{
+	display: flex;
+}
+#Navigation{
+	width: 480px;
+	background: linear-gradient(#00a1d6,#82c5d8);
+	display: flex;
+	position: relative;
+	float: left;
+	flex-direction: column;
+}
+#NgtTop{
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	display: flex;
+}
+#TLogo{
+	margin-left: 20px;
+	width: 76px;
+	height: 76px;
+	display: block;
+	position: relative;
+	float: left;
+}
+#LogoName{
+	margin-left: 15px;
+	height: 76px;
+	display: block;
+	float: left;
+	line-height: 76px;
+	text-decoration: none;
+	font-size: 36px;
+	font-family: Ink Free;
+	color: white;
+}
+#TLogo-Img{
+	width: 76px;
+	height: 76px;
+	display: block;
+	float: left;
+}
+#Search{
+	width: 300px;
+	height: 60px;
+	display: block;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	overflow: hidden;
+	border-radius: 30px;
+	margin-top: 5px;
+}
+#SearchIn{
+	width: 300px;
+	height: 60px;
+	border: none;
+	border-radius: 30px;
+	font-size: 16px;
+	text-indent: 1em;
+	line-height: 60px;
+	outline: none;
+}
+#Button-Search{
+	width: 56px;
+	height: 55px;
+	position: absolute;
+	background: linear-gradient(270deg,#82c5d8,#bbd3df);
+	border: none;
+	border-radius: 50%;
+	right: 4px;
+	display: block;
+	top: 3px;
+	transition: all .2s;
+}
+#Icon-Search{
+	width: 32px;
+	height: 32px;
+	position: relative;
+	display: block;
+	background: url(../img/sousuo.png);
+	top: 10px;
+	left: 12px;
+	transition: all .2s;
+}
+#Button-Search:hover>#Icon-Search{
+	background: url(../img/sousuo2.png);
+}
+#ToUser{
+	margin-left: 10px;
+	width: 44px;
+	height: 44px;
+	float: left;
+	position: relative;
+	display: block;
+	margin-top: 12px;
+}
+#User{
+	width: 100%;
+	height: 100%;
+	display: block;
+	opacity: 1;
+}
+#User>img{
+	width: 44px;
+	height: 44px;
+}
+#ToSign{
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	position: relative;
+	top: -52px;
+	transition: all .2s;
+	opacity: 0;
+}
+#NgtSign{
+	margin: auto;
+	height: 24px;
+	line-height: 24px;
+	font-size: 18px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	position: relative;
+	transition: all .2s;
+	margin-top: 4px;
+}
+#NgtSign:hover{
+	color: gray;
+	text-shadow: 0 0 6px #FFFFFF;
+}
+#NgtRegister{
+	margin: auto;
+	margin-top: 4px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 18px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	position: relative;
+	transition: all .2s;
+}
+#NgtRegister:hover{
+	color: gray;
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#NgtBody{
+	width: 100%;
+	height: 750px;
+	position: relative;
+	float: left;
+	display: flex;
+	flex-direction: column;
+}
+#NgtBRight{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	z-index: 10;
+}
+#NgtBPanel{
+	
+}
+#NgtLine{
+	width: 100px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	float: left;
+	list-style-type: none;
+	margin-left: 100px;
+	overflow: hidden;
+	margin-top: 0px;
+}
+.NgtL1{
+	height: 24px;
+	display: block;
+	line-height: 24px;
+	margin-top: 50px;
+}
+#NgtL1{
+	margin: 0;
+}
+.ListHref{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	display: block;
+	position: relative;
+	transition: all .2s;
+}
+.ListHref:hover{
+	text-shadow: 0 0 8px white;
+}
+#Page{
+	color: rgba(255,255,255,.6);
+}
+#ForUs{
+	color: rgba(255,255,255,.8);
+}
+#Mine{
+	color: rgba(255,255,255,1);
+}
+#SingList{
+	color: rgba(255,255,255,.8);
+}
+#MoodList{
+	color: rgba(255,255,255,.6);
+}
+#SubOption{
+	width: 120px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	margin-top: 57px;
+	position: relative;
+	margin-left: 30px;
+}
+#PanelMine{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	z-index: -1;
+	transition: all .2s;
+}
+#PMLine2{
+	list-style-type: none;
+}
+.PML{
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+}
+#PML{
+	margin: 0;
+}
+.PMHref{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	transition: all .2s;
+}
+.PMHref:hover{
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#Rencently{
+	color: rgba(255,255,255,.6);
+}
+#Like{
+	color: rgba(255,255,255,.8);
+}
+#MoodDairy{
+	color: rgba(255,255,255,1);
+}
+#MyList{
+	color: rgba(255,255,255,.8);
+}
+#CollectionSongs{
+	color: rgba(255,255,255,.6);
+}
+#PanelPage{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+	opacity: 1;
+	z-index: 10;
+	transition: all .2s;
+}
+#PPLine2{
+	list-style-type: none;
+}
+.PPL{
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+}
+#PPL{
+	margin: 0;
+}
+.PPHref{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	transition: all .2s;
+}
+.PPHref:hover{
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#Also{
+	color: rgba(255,255,255,.6);
+}
+#Selfless{
+	color: rgba(255,255,255,.8);
+}
+#Recommand{
+	color: rgba(255,255,255,1);
+}
+#GuessLike{
+	color: rgba(255,255,255,.8);
+}
+#MusicJournal{
+	color: rgba(255,255,255,.6);
+}
+/*====================================*/
+
+
+#PanelForUs{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	display: block;
+	opacity: 0;
+	z-index: -1;
+	transition: all .2s;
+}
+#PFLine2{
+	margin-top: 63px;
+	list-style-type: none;
+}
+.PFL{
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+}
+#PFL{
+	margin: 0;
+}
+.PFHref{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	transition: all .2s;
+}
+.PFHref:hover{
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#Server{
+	color: rgba(255,255,255,.8);
+}
+#Privacy{
+	color: rgba(255,255,255,1);
+}
+#Communicate{
+	color: rgba(255,255,255,.8);
+}
+/*====================================*/
+
+
+#PanelSingList{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	display: block;
+	opacity: 0;
+	z-index: -1;
+	transition: all .2s;
+}
+#PSLine2{
+	margin-top: 63px;
+	list-style-type: none;
+}
+.PSL{
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+}
+#PSL{
+	margin: 0;
+}
+.PSHref{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	transition: all .2s;
+}
+.PSHref:hover{
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#New{
+	color: rgba(255,255,255,.8);
+}
+#Hot{
+	color: rgba(255,255,255,1);
+}
+#Kind{
+	color: rgba(255,255,255,.8);
+}
+/*====================================*/
+
+
+#PanelMoodList{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	display: block;
+	opacity: 0;
+	z-index: -1;
+	transition: all .2s;
+}
+#PMLLine2{
+	margin-top: 63px;
+	list-style-type: none;
+}
+.PMLL{
+	height: 24px;
+	line-height: 24px;
+	display: block;
+	margin-top: 25px;
+	position: relative;
+}
+#PMLL{
+	margin: 0;
+}
+.PMLHref{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	transition: all .2s;
+}
+.PMLHref:hover{
+	text-shadow: 0 0 10px #FFFFFF;
+}
+#Found{
+	color: rgba(255,255,255,.8);
+}
+#Similar{
+	color: rgba(255,255,255,1);
+}
+#Concerned{
+	color: rgba(255,255,255,.8);
+}
+#NgtBBot{
+	width: 100%;
+	height: 400px;
+	display: block;
+	position: relative;
+	float: left;
+}
+#NgtBotBack{
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	margin-left: 30px;
+	top: -80px;
+}
+#ImageBack{
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+#NgtBBotx{
+	height: 90px;
+	width: 100%;
+	display: block;
+	bottom: 10px;
+	position: absolute;
+	z-index: 10;
+}
+#PlayBackBar{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 10;
+}
+#PPBTop{
+	width: 100%;
+	height: 120px;
+	display: flex;
+	position: relative;
+	float: left;
+}
+#MusicPlay{
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin-left: 40px;
+}
+#SingImage{
+	width: 98px;
+	height: 98px;
+}
+#icon-Last{
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url(../img/fangxiang.png);
+	margin-left: 10px;
+	margin-top: 8px;
+}
+#icon-Stop{
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/zantingtingzhi.png);
+	margin-left: 12px;
+	margin-top: 10px;
+}
+#icon-Next{
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url(../img/fangxiang2.png);
+	margin-left: 16px;
+	margin-top: 8px;
+}
+#PPBTR{
+	width: 300px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+#MusicText{
+	margin: 0 12%;
+	margin-top: 10px;
+	width: 76%;
+	height: 16px;
+	display: block;
+	float: left;
+	line-height: 16px;
+	text-align: left;
+	color: rgba(255,255,255,.8);
+}
+#Play{
+	width: 100%;
+	height: 90px;
+	display: flex;
+	position: relative;
+	float: left;
+}
+#LastMusic{
+	width: 56px;
+	height: 56px;
+	display: block;
+	border-radius: 50%;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+#Stop{
+	width: 72px;
+	height: 72px;
+	display: block;
+	border-radius: 50%;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+#NextMusic{
+	width: 56px;
+	height: 56px;
+	display: block;
+	border-radius: 50%;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#PPBBot{
+	width: 100%;
+	height: 20px;
+	display: flex;
+	position: relative;
+	float: left;
+}
+#ProgressBar{
+	width: 400px;
+	height: 12px;
+	display: block;
+	background: #FFFFFF;
+	position: relative;
+	border-radius: 6px;
+	float: left;
+	margin-left: 30px;
+}
+#End{
+	width: 24px;
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	display: block;
+	float: left;
+	margin-left: 5px;
+}
+#Icon-Bar{
+	width: 20%;
+	height: 100%;
+	display: block;
+	background: grey;
+	border-radius: 6px;
+}
+#RAlert{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 70px;
+	top: 272px;
+	left: 395px;
+}
+#RAlertText{
+	color: red;
+	width: 60px;
+	height: 70px;
+	line-height: 16px;
+	font-size: 14px;
+	text-align: left;
+}
+#PhoneAlert{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 70px;
+	top: 427px;
+	left: 395px;
+}
+#PAlertText{
+	color: red;
+	width: 60px;
+	height: 70px;
+	line-height: 16px;
+	font-size: 14px;
+	text-align: left;
+}

@@ -1,0 +1,198 @@
+#ShouYe{
+	width: 1380px;
+	height: 943px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 70px;
+	overflow-y: scroll;
+}
+#LunBoTu{
+	width: 1300px;
+	height: 840px;
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+#wrap{
+	width: 1300px;
+	height: 800px;
+	display: block;
+	overflow: hidden;
+	background: #000000;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+#wrap-ul{
+	position: relative;
+	list-style: none;
+	width: 1300px;
+	height: 800px;
+	display: block;
+	overflow: hidden;
+	transition: all .2s;
+}
+.rpi{
+	width: 1300px;
+	height: 800px;
+	display: block;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+#rpi-1{
+	background: url(../img/ecb4380a734aaf80442eac6b286bd702.jpg@880w_440h.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#rpi-2{
+	background: url(../img/gc10.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#rpi-3{
+	background: url(../img/gc2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#rpi-4{
+	background: url(../img/2b6c-fyrkuxs7794660.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#rpi-5{
+	background: url(../img/gc6.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#rpcur{
+	position: absolute;
+	z-index:100;
+	height: 20px;
+	bottom: 20px;
+	left: 540px;
+}
+#cur0,#cur1,#cur2,#cur3,#cur4{
+	padding: 0;
+	width: 12px;
+	height: 12px;
+	background: #000000;
+	background-position:  -855px -790px;
+	display: inline-block;
+	margin-left: 8px;
+	position: relative;
+	border-radius: 10px;
+	border: 2px solid rgba(255,255,255,.6);
+}
+#cur0:hover,#cur1:hover,#cur2:hover,#cur3:hover,#cur4:hover{
+	background-position: -919px -790px;
+}
+#cur{
+	display: inline-block;
+	margin-left: 8px;
+	border-radius: 10px;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+	background: #00A1D6;
+	position: relative;
+	z-index: 2;
+	border: 2px solid rgba(255,255,255,.6);
+}
+.rpm{
+	width: 72px;
+	height: 72px;
+	display: block;
+	position: absolute;
+	background: #000000;
+	right: 100px;
+	top: 250px;
+	border-radius: 50%;
+	background: url(../img/bofang2.png);
+	opacity: 0;
+	transition: all .4s;
+}
+#rpm-icon{
+	width: 80px;
+	height: 5px;
+	border-top: 3px solid #FFFFFF;
+	display: block;
+	position: absolute;
+	right: -90px;
+	top: 34px;
+}
+#RecommandSingList{
+	width: 1300px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-top: 70px;
+}
+#RSLTop{
+	display: block;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	border-bottom: 4px solid #000000;
+}
+#RSLtitle{
+	display: block;
+	float: left;
+	height: 40px;
+	font-size: 24px;
+	line-height: 24px;
+	color: #000000;
+}
+#RSLMore{
+	display: block;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+	font-size: 14px;
+	float: right;
+	border: 1px solid #E5E9EF;
+	text-align: center;
+	border-radius: 5px;
+	color: #82C5D8;
+}
+#RSLBot{
+	width: 100%;
+	height: 340px;
+	display: block;
+	position: relative;
+	border: 1px solid #00A1D6;
+	margin-top: 10px;
+}
+#RSLInfo{
+	width: 1300px;
+	height: 280px;
+	display: flex;
+	position: relative;
+	background: #000000;
+	transition: all .2s;
+	overflow: hidden;
+}
+.SLInfoCard{
+	width: 250px;
+	height: 280px;
+	display: block;
+	float: left;
+	margin-left: 70px;
+	background: url(../img/2b6c-fyrkuxs7794660.jpg)	;
+	background-size: 100% 100%;
+	transition: all .3s linear;
+	flex-shrink: 0;
+}
+#SLI1{
+	margin-left: -600px;
+}
+.SLC{
+	width: 48px;
+	height: 48px;
+	display: block;
+	position: relative;
+	background: url(../img/bofang.png);
+	top: 130px;
+	left: 100px;
+	opacity: 0;
+	transition: all .3s;
+}

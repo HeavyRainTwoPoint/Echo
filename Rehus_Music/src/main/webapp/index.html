@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/rehus/css/Sign.css"/>
+		<link rel="stylesheet" type="text/css" href="/rehus/css/Register.css">
+		<link rel="stylesheet" type="text/css" href="/rehus/css/ShouYe.css"/>
+		<link rel="stylesheet" type="text/css" href="/rehus/css/Navigation.css">
+		<link rel="stylesheet" href="/rehus/css/musicplayer.css" type="text/css">
+	</head>
+	<body id="bodys">
+		<div id="All">
+			<div id="Navigation">
+				<div id="NgtTop">
+					<div id="TLogo">
+						<img id="TLogo-Img" src="img/logo.png" >
+						
+					</div>
+					<div id="Search">
+						<a href="javascript:void()" id="Button-Search">
+							<i id="Icon-Search"></i>
+						</a>
+						<input type="text" name="SearchIn" id="SearchIn" value="" placeholder="音乐/歌单/期刊" />
+					</div>
+					<div id="ToUser" onmouseover="ToSign()" onmouseout="ToLeave()">
+						<a href="" id="User">
+							<img src="img/yonghu.png" >
+						</a>
+						<div id="ToSign">
+							<a href="javascript:void(0)" onclick="GoSign()" id="NgtSign">登录</a>
+							<a href="javascript:void(0)" onclick="GoRegister()" id="NgtRegister">注册</a>
+						</div>
+					</div>
+				</div>
+				<div id="NgtBody">
+					<div id="NgtBRight">
+						<div id="NgtPanel">
+							<ul id="NgtLine">
+								<li class="NgtL1" id="NgtL1">
+									<a href="javascript:void()" onclick="ListMove(1)" class="ListHref" id="Page">首页</a>
+								</li>
+								<li class="NgtL1">
+									<a href="javascript:void()" onclick="ListMove(2)" class="ListHref" id="ForUs">关于我们</a>
+								</li>
+								<li class="NgtL1">
+									<a href="javascript:void()" onclick="ListMove(3)" class="ListHref" id="Mine">我的</a>
+								</li>
+								<li class="NgtL1">
+									<a href="javascript:void()" onclick="ListMove(4)" class="ListHref" id="SingList">歌单</a>
+								</li>
+								<li class="NgtL1">
+									<a href="javascript:void()" onclick="ListMove(5)" class="ListHref" id="MoodList">心情集</a>
+								</li>
+							</ul>
+						</div>
+						<div id="SubOption">
+							<div id="PanelMine">
+								<ul id="PMLine2">
+									<li class="PML" id="PML">
+										<a href="javascript:void()" onclick="ColorMine(1)" class="PMHref" id="Rencently">最近播放</a>
+									</li>
+									<li class="PML">
+										<a href="javascript:void()" onclick="ColorMine(2)" class="PMHref" id="Like">我的喜欢</a>
+									</li>
+									<li class="PML">
+										<a href="javascript:void()" onclick="ColorMine(3)" class="PMHref" id="MoodDairy">心情日记</a>
+									</li>
+									<li class="PML">
+										<a href="javascript:void()" onclick="ColorMine(4)" class="PMHref" id="MyList">我的歌单</a>
+									</li>
+									<li class="PML">
+										<a href="javascript:void()" onclick="ColorMine(5)" class="PMHref" id="CollectionSongs">收藏歌单</a>
+									</li>
+								</ul>
+							</div>
+							<div id="PanelPage">
+								<ul id="PPLine2">
+									<li class="PPL" id="PPL">
+										<a href="javascript:void()" onclick="ColorPage(1)" class="PPHref" id="Also">他也在听</a>
+									</li>
+									<li class="PPL">
+										<a href="javascript:void()" onclick="ColorPage(2)" class="PPHref" id="Selfless">私人频道</a>
+									</li>
+									<li class="PPL">
+										<a href="javascript:void()" onclick="ColorPage(3)" class="PPHref" id="Recommand">推荐歌单</a>
+									</li>
+									<li class="PPL">
+										<a href="javascript:void()" onclick="ColorPage(4)" class="PPHref" id="GuessLike">猜你喜欢</a>
+									</li>
+									<li class="PPL">
+										<a href="javascript:void()" onclick="ColorPage(5)" class="PPHref" id="MusicJournal">音乐期刊</a>
+									</li>
+								</ul>
+							</div>
+							<div id="PanelForUs">
+								<ul id="PFLine2">
+									<li class="PFL" id="PFL">
+										<a href="javascript:void()" onclick="ColorForUs(1)" class="PFHref" id="Server">服务条款</a>
+									</li>
+									<li class="PFL">
+										<a href="javascript:void()" onclick="ColorForUs(2)" class="PFHref" id="Privacy">隐私政策</a>
+									</li>
+									<li class="PFL">
+										<a href="javascript:void()" onclick="ColorForUs(3)" class="PFHref" id="Communicate">联系我们</a>
+									</li>
+								</ul>
+							</div>
+							<div id="PanelSingList">
+								<ul id="PSLine2">
+									<li class="PSL" id="PSL">
+										<a href="javascript:void()" onclick="ColorSL(1)" class="PSHref" id="New">最新</a>
+									</li>
+									<li class="PSL">
+										<a href="javascript:void()" onclick="ColorSL(2)" class="PSHref" id="Hot">最热</a>
+									</li>
+									<li class="PSL">
+										<a href="javascript:void()" onclick="ColorSL(3)" class="PSHref" id="Kind">分类</a>
+									</li>
+								</ul>
+							</div>
+							<div id="PanelMoodList">
+								<ul id="PMLLine2">
+									<li class="PMLL" id="PMLL">
+										<a href="javascript:void()" onclick="ColorMLL(1)" class="PMLHref" id="Found">发现</a>
+									</li>
+									<li class="PMLL">
+										<a href="javascript:void()" onclick="ColorMLL(2)" class="PMLHref" id="Similar">相似的人</a>
+									</li>
+									<li class="PMLL">
+										<a href="javascript:void()" onclick="ColorMLL(3)" class="PMLHref" id="Concerned">关注的人</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="NgtBotBack">
+						<img src="img/calm.png" id="ImageBack" >
+					</div>
+				</div>
+				<div id="NgtBBotx">
+					<div id="dowebok">
+						<div id="player">
+							<div id="player-track" class>
+								<div id="album-name">Dawn</div>
+								<div id="track-name">Skylike - Dawn</div>
+								<div id="track-time">
+									<div id="current-time">00:00</div>
+									<div id="track-length">00:00</div>
+								</div>
+								<div id="s-area">
+									<div id="ins-time"></div>
+									<div id="s-hover"></div>
+									<div id="seek-bar"></div>
+								</div>
+							</div>
+							<div id="player-content">
+								<div id="album-art" class="">
+									<i id="icon-art"></i>
+									<img src="img/2b6c-fyrkuxs7794660.jpg" class="" id="_1" alt="">
+									<img src="img/ecb4380a734aaf80442eac6b286bd702.jpg@880w_440h.jpg" class="" id="_2" alt="">
+									<img src="img/gc10.jpg" class="" id="_3" alt="">
+									<img src="img/gc6.jpg" class="" id="_4" alt="">
+									<img src="img/gc2.jpg" class="" id="_5" alt="">
+									<div id="buffer-box">加载中...</div>
+								</div>
+								<div id="player-controls">
+									<div class="control">
+										<div class="buttonc" id="play-previous">
+											<i class="fas fa-backward"></i>
+										</div>
+									</div>
+									<div class="control">
+										<div class="buttonc" id="play-pause-button">
+											<i class="fas fa-play"></i>
+										</div>
+									</div>
+									<div class="control">
+										<div class="buttonc" id="play-next">
+											<i class="fas fa-forward"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="HideButton" class="">
+								<div id="ConButton">
+									<div class="controlx">
+										<div class="buttoncx" id="play-bofan">
+											<i class="fasx fa-shunxu"></i>
+										</div>
+									</div>
+									<div class="controlx">
+										<div class="buttoncx" id="play-shoucan">
+											<i class="fasx fa-white"></i>
+										</div>
+									</div>
+									<div class="controlx yinliang">
+										<div class="buttoncx" id="play-yiliang">
+											<i class="fasx fa-yinliang"></i>
+											<div class="all">
+												<p>0%</p>
+												<div class="bar">
+												<div class="box"></div>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="ShouYe">
+				<div id="LunBoTu">
+					<div id="wrap" onmouseover="pause()" onmouseout="reStart()">
+						<ul id="wrap-ul" style="width: 500%;">
+							<li class="rpi" id="rpi-1" onmouseout="less(1)" onmouseover="more(1)">
+								<a href="" id="rpa-1">
+									Will you be the one to hold me?
+									<br />Tell me I will be the one.
+								</a>
+								<a href="" class="rpm" id="rpm-1" >
+									<i id="rpm-icon"></i>
+								</a>
+							</li>
+							<li class="rpi" id="rpi-2" onmouseout="less(2)" onmouseover="more(2)">
+								<a href="" id="rpa-2">
+								</a>
+								<a href="" class="rpm" id="rpm-2">
+									<i id="rpm-icon"></i>
+								</a>
+							</li>
+							<li class="rpi" id="rpi-3" onmouseout="less(3)" onmouseover="more(3)">
+								<a href="" id="rpa-3">
+								</a>
+								<a href="" class="rpm" id="rpm-3">
+									<i id="rpm-icon"></i>
+								</a>
+							</li>
+							<li class="rpi" id="rpi-4" onmouseout="less(4)" onmouseover="more(4)">
+								<a href="" id="rpa-4">
+								</a>
+								<a href="" class="rpm" id="rpm-4">
+									<i id="rpm-icon"></i>
+								</a>
+							</li>
+							<li class="rpi" id="rpi-5" onmouseout="less(5)" onmouseover="more(5)">
+								<a href="" id="rpa-5">
+								</a>
+								<a href="" class="rpm" id="rpm-5">
+									<i id="rpm-icon"></i>
+								</a>
+							</li>
+						</ul>
+						<div id="rpcur" >
+							<a href="javascript:click(0)" id="cur"></a>
+							<a href="javascript:click(1)" id="cur1"></a>
+							<a href="javascript:click(2)" id="cur2"></a>
+							<a href="javascript:click(3)" id="cur3"></a>
+							<a href="javascript:click(4)" id="cur4"></a>
+						</div>
+					</div>
+				</div>
+				<div id="RecommandSingList">
+					<div id="RSLTop">
+						<a id="RSLtitle">推荐歌单</a>
+						<a href="" id="RSLMore">更多歌单</a>
+					</div>
+					<div id="RSLBot">
+						<div id="RSLInfo" onmouseover="SLStop()" onmouseout="SLStart()">
+							<a href="" class="SLInfoCard" onmouseover="SLC(1)" onmouseout="SLC2(1)" id="SLI1">
+								<div class="SLC" id="SLC1">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(2)" onmouseout="SLC2(2)" id="SLI2">
+								<div class="SLC" id="SLC2">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(3)" onmouseout="SLC2(3)" id="SLI3">
+								<div class="SLC" id="SLC3">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(4)" onmouseout="SLC2(4)" id="SLI4">
+								<div class="SLC" id="SLC4">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(5)" onmouseout="SLC2(5)" id="SLI5">
+								<div class="SLC" id="SLC5">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(6)" onmouseout="SLC2(6)" id="SLI6">
+								<div class="SLC" id="SLC6">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(7)" onmouseout="SLC2(7)" id="SLI7">
+								<div class="SLC" id="SLC7">
+									
+								</div>
+							</a>
+							<a href="" class="SLInfoCard" onmouseover="SLC(8)" onmouseout="SLC2(8)" id="SLI8">
+								<div class="SLC" id="SLC8">
+									
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container" >
+			<div id="container-all"onclick="Disappear()">
+				
+			</div>
+			<div id="SignIn" >
+				<div id="SignLeft">
+					<div id="Logo">
+						<a href="javascript:void()" id="LogoHref">
+							<img src="" id="LogoImg" >
+						</a>
+					</div>
+					<div id="Image">
+						<img src="img/安静/66-original.png" id="SignImage" >
+					</div>
+					<i id="LogoText"></i>
+				</div>
+				<div id="SignRight">
+					<div id="blue">
+						<p id="SignText">登录</p>
+					</div>
+					<p id="Welcome">Welcome Back:)</p>
+					<div id="SignInfo">
+						<div id="SignName">
+							<input type="text" name="SignIn" id="account" placeholder="邮箱/手机号" />
+							<i id="Icon-Name"></i>
+						</div>
+						<div id="SignPass">
+							<input type="password" name="PassWord" id="password" placeholder="密码" />
+							<i id="Icon-Password"></i>
+						</div>
+						<div id="alert">
+							<p id="AlertText">*用户名或密码错误</p>
+						</div>
+					</div>
+					<div id="AboutPass">
+						<div id="MemoryPass">
+							<input type="checkbox" name="" id="memory" value="" />
+							<span id="MemoryText">
+								记住密码
+							</span>
+						</div>
+						<div id="ForgetPass">
+							<a href="" id="forget">忘记密码?</a>
+						</div>
+					</div>
+					<div id="Button">
+						<input type="button" name="" id="ButtonSign" onclick="SignIn()" value="登录"/>
+						<input type="button" name="" id="ButtonRegister" value="注册" onclick="Register()"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Rcontainer">
+			<div id="Rcontainer-all"onclick="RDisappear()">
+				
+			</div>
+			<div id="RSignIn">
+				<div id="RSignRight">
+					<div id="Rblue">
+						<p id="RSignText">注册</p>
+					</div>
+					<p id="RWelcome">Welcome to Echo:)</p>
+					<div id="RSignInfo">
+						<div id="RSignName">
+							<input type="text" name="Raccount" id="Raccount" placeholder="昵称" onblur="IfHad()" />
+							<i id="Icon-Name"></i>
+						</div>
+						<div id="RSignPass">
+							<input type="password" name="RPassWord" id="Rpassword" placeholder="密码(6-16个字符组成 区分大小写)" />
+							<i id="Icon-Password"></i>
+						</div>
+						<div id="RNumber">
+							<select id="RSelect">
+								<option value ="中国大陆" selected="selected">中国大陆</option>
+								<option value ="中国澳门">中国澳门</option>
+								<option value="中国香港">中国香港</option>
+								<option value="中国台湾">中国台湾</option>
+							</select>
+							<i id="after">
+							</i>
+							<input onblur="IsPhone()" type="text" name="phone" id="phone" placeholder="手机号"/>
+						</div>
+						<div id="Rget">
+							<input type="text" name="Verification" id="Verification" value="" placeholder="输入短信验证码" />
+							<a href="javascript:void(0)" onclick="getCode()" id="GetCode">点击获取</a>
+						</div>
+						<div id="Agree">
+							<input type="checkbox" name="RA" id="RA" value="" />
+							<span id="AgreeText">
+								我已阅读并同意相关服务条款和隐私政策
+							</span>
+						</div>
+					</div>
+					<div id="RButton">
+						<input type="button" name="" id="RButtonRegister" value="立即注册" onclick="ToRegisterSJ()"/>
+					</div>
+				</div>
+				<div id="RSignLeft">
+					<div id="RLogo">
+						<a href="javascript:void()" id="RLogoHref">
+							<img src="" id="RLogoImg" >
+						</a>
+						<i id="RName"></i>
+					</div>
+					<div id="RImage">
+						<img src="img/安静/66-original.png" id="SignImage" >
+					</div>
+					<i id="RLogoText"></i>
+					
+				</div>
+				<a href="javascript:void()" id="BackSign" onclick="BackSign()">
+					返回登录→
+				</a>				
+				<a href="javascript:void()" id="REmail" onclick="Register2()">
+					邮箱注册
+				</a>
+				<div id="RAlert">
+					<p id="RAlertText">*用户名不能为空</p>
+				</div>
+				<div id="PhoneAlert">
+					<p id="PAlertText">*手机号不能为空</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Rcontainer2">
+			<div id="Rcontainer-all2"onclick="RDisappear2()">
+				
+			</div>
+			<div id="RSignIn2">
+				<div id="RSignRight2">
+					<div id="Rblue2">
+						<p id="RSignText2">注册</p>
+					</div>
+					<p id="RWelcome2">Welcome to Echo:)</p>
+					<div id="RSignInfo2">
+						<div id="RSignName2">
+							<input type="text" name="Raccount2" id="Raccount2" placeholder="昵称" />
+							<i id="Icon-Name"></i>
+						</div>
+						<div id="RSignPass2">
+							<input type="password" name="RPassWord2" id="Rpassword2" placeholder="密码(6-16个字符组成 区分大小写)" />
+							<i id="Icon-Password"></i>
+						</div>
+						<div id="RSignEmail">
+							<input type="password" name="Email" id="Email" placeholder="邮箱" />
+						</div>
+						<div id="Agree2">
+							<input type="checkbox" name="RA" id="RA2" value="" />
+							<span id="AgreeText2">
+								我已阅读并同意相关服务条款和隐私政策
+							</span>
+						</div>
+					</div>
+					<div id="RButton2">
+						<input type="button" name="" id="RButtonRegister2" onclick="ToRegisterEmail()" value="邮箱激活" />
+					</div>
+				</div>
+				<div id="RSignLeft2">
+					<div id="RLogo2">
+						<a href="javascript:void()" id="RLogoHref2">
+							<img src="" id="RLogoImg2" >
+						</a>
+						<i id="RName2"></i>
+					</div>
+					<div id="RImage2">
+						<img src="img/安静/66-original.png" id="SignImage" >
+					</div>
+					<i id="RLogoText2"></i>
+					
+				</div>
+				<a href="javascript:void()" id="BackSign2" onclick="BackSign2()">
+					返回登录→
+				</a>
+				<a href="javascript:void()" id="RPhone" onclick="ToPhone()">
+					手机注册
+				</a>
+				<div id="RAlert">
+					<p id="RAlertText">*用户名不能为空</p>
+				</div>
+				<div id="PhoneAlert">
+					<p id="PAlertText">*手机号不能为空</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/SignRegister.js"></script>
+		<script type="text/javascript" src="js/Navigiation.js"></script>
+		<script type="text/javascript" src="js/ShouYe.js"></script>
+		<script src="js/Ajax-SignIn.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/musicplayer.js"></script>
+	</body>
+</html>

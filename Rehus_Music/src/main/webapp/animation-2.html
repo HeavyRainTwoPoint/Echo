@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动画二</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+/*		最外面的大盒子*/
+		.big{
+			text-align: center;
+			vertical-align: middle;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: auto;
+			z-index: 1;
+			
+		}
+/*		first~four为从左到右的四条柱子*/
+		.first{
+			width: 70px;
+			height: 320px;
+			border-radius: 28px;
+/*			background:linear-gradient(#107EB3,#71D9E5);*/
+			background: #4CA1AF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(left, #C4E0E5, #4CA1AF);
+            background: -o-linear-gradient(left, #C4E0E5, #4CA1AF);
+            background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
+			float: left;
+			margin-left: 550px;
+			margin-top: -150px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 320px;
+			position: relative;
+			opacity: 0;
+		}
+/*		first——circle代表柱子里的白圆，top为上面的，bottom为下面的，以此类推*/
+		.first_circle_top,.first_circle_bottom{
+			width: 35px;
+			height: 35px;
+			float: left;
+			background-color: white;
+			border-radius: 17.5px;
+			margin-top: 60px;
+			margin-left: 17.5px;
+		}
+		.first_circle_bottom{
+			margin-top: 130px;
+		}
+		.two{
+			width: 70px;
+			height: 280px;
+			border-radius: 28px;
+/*			background:linear-gradient(#FFB67E,#EC743E);*/
+			background: #FF5F6D; /*fallback for old browsers */
+            background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
+            background: -o-linear-gradient(left, #FFC371, #FF5F6D);
+            background: linear-gradient(to right, #FFC371, #FF5F6D);  
+			float: left;
+			margin-left: 50px;
+			margin-top: -150px;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
+			opacity: 0;
+		}
+		.two_circle_top,.two_circle_bottom{
+			width: 35px;
+			height: 35px;
+			float: left;
+			background-color: white;
+			border-radius: 17.5px;
+			margin-top: 60px;
+			margin-left: 17.5px;
+		}
+		.two_circle_bottom{
+			margin-top: 90px;
+		}
+		.three{
+			width: 70px;
+			height: 240px;
+			border-radius: 28px;
+			background:linear-gradient(#8DE0B9,#386555);
+			float: left;
+			margin-left: 50px;
+			margin-top: -150px;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
+			opacity: 0;
+		}
+		.three_circle_top,.three_circle_bottom{
+			width: 35px;
+			height: 35px;
+			float: left;
+			background-color: white;
+			border-radius: 17.5px;
+			margin-top: 60px;
+			margin-left: 17.5px;
+		}
+		.three_circle_bottom{
+			margin-top: 50px;
+		}
+		.four{
+			width: 70px;
+			height: 200px;
+			border-radius: 28px;
+/*			background:linear-gradient(#05727F,#4CB1A6);*/
+			background: #2C3E50;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(left, #4CA1AF, #2C3E50);
+            background: -o-linear-gradient(left, #4CA1AF, #2C3E50);
+            background: linear-gradient(to right, #4CA1AF, #2C3E50); 
+			float: left;
+			margin-left: 50px;
+			margin-top: -150px;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
+			opacity: 0;
+		}
+		.four_circle_top,.four_circle_bottom{
+			width: 35px;
+			height: 35px;
+			float: left;
+			background-color: white;
+			border-radius: 17.5px;
+			margin-top: 50px;
+			margin-left: 17.5px;
+		}
+		.four_circle_bottom{
+			margin-top: 30px;
+		}
+		
+/*		下面的表情按钮*/
+		.img_box{
+			width: 630px;
+			height: 72px;
+			float: left;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 72px;
+			margin-left: 480px;
+			margin-top: 840px;
+			opacity: 0;
+		}
+/*		按顺序一二三四*/
+		.img_first,.img_three{
+			width: 70px;
+			float: left;
+			margin-top: 500px;
+		}
+		.img_two,.img_four{
+			width: 70px;
+			float: left;
+			margin-top: 500px;
+		}
+		.img_two,.img_three,.img_four{
+			margin-left: 100px;
+		}
+		
+/*		以下为动画设置*/
+/*		设置参数以及设置关键帧，这里的名称对应盒子的名称*/
+		html:hover .first{
+			animation-delay: 100ms;
+			animation-duration: 800ms;
+			animation-name: first;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+		}
+		@keyframes first{
+			to{
+				width: 70px;
+				height: 320px;
+				border-radius: 28px;
+				background:linear-gradient(#107EB3,#71D9E5);
+				float: left;
+				margin-left: 550px;
+				margin-top: 50px;
+				text-align: center;
+				vertical-align: middle;
+				line-height: 320px;
+				opacity: 1;
+			}
+		}
+		
+		html:hover .two{
+			animation-delay: 300ms;
+			animation-duration: 800ms;
+			animation-name: two;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+		}
+		@keyframes two{
+			to{
+				width: 70px;
+				height: 280px;
+				border-radius: 28px;
+				background:linear-gradient(#FFB67E,#EC743E);
+				float: left;
+				margin-left: 50px;
+				margin-top: 70px;
+				text-align: center;
+				vertical-align: middle;
+				position: relative;
+				opacity: 1;
+			}
+		}
+		
+		html:hover .three{
+			animation-delay: 500ms;
+			animation-duration: 800ms;
+			animation-name: three;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+		}
+		@keyframes three
+		{
+			to{
+				width: 70px;
+				height: 240px;
+				border-radius: 28px;
+				background:linear-gradient(#62DFAE,#555555);
+				float: left;
+				margin-left: 50px;
+				margin-top: 90px;
+				text-align: center;
+				vertical-align: middle;
+				position: relative;
+				opacity: 1;
+			}
+		}
+		
+		html:hover .four{
+			animation-delay: 700ms;
+			animation-duration: 800ms;
+			animation-name: four;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+		}
+		@keyframes four
+		{
+			to{
+				width: 70px;
+				height: 200px;
+				border-radius: 28px;
+				background:linear-gradient(#05727F,#4CB1A6);
+				float: left;
+				margin-left: 50px;
+				margin-top: 110px;
+				text-align: center;
+				vertical-align: middle;
+				position: relative;
+				opacity: 1;
+			}
+		}
+		
+		html:hover .img_box{
+			animation-delay: 100ms;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-name: img_box;
+		}
+		@keyframes img_box{
+			to{
+				margin-top:40px;
+				opacity: 1;
+			}
+		}
+		
+		html:hover .img_first{
+			animation-delay: 700ms;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-name: img_first;
+		}
+		@keyframes img_first
+		{
+			to{
+				margin-top: 0px;
+			}
+		}
+		
+		html:hover .img_two{
+			animation-delay: 500ms;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+			animation-name: img_two;
+		}
+		@keyframes img_two
+		{
+			to{
+				margin-top: 0px;
+			}
+		}
+		
+		html:hover .img_three{
+			animation-delay: 300ms;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-name: img_three;
+		}
+		@keyframes img_three
+		{
+			to{
+				margin-top: 0px;
+			}
+		}
+		
+		html:hover .img_four{
+			animation-delay: 100ms;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-name: img_four;
+		}
+		@keyframes img_four
+		{
+			to{
+				margin-top: 0px;
+			}
+		}
+		
+		.img_first:hover{
+			width:70px;
+			height: 70px;
+			transition-delay: 100ms;
+			transition-duration: 500ms;
+/*			transform:rotate(360deg);*/
+			transition-timing-function: ease-in-out;
+			transform: scale(1.5);
+
+			
+		}
+		.img_two:hover{
+			width:70px;
+			height: 70px;
+			transition-delay: 100ms;
+			transition-duration: 10s;
+			transform:rotate(18000deg);
+			transition-timing-function: ease-in-out;
+		}
+		.img_three:hover{
+			width:70px;
+			height: 70px;
+			transition-delay: 100ms;
+			transition-duration: 500ms;
+			transition-timing-function: ease-in-out;
+			transform: scale(0.5);
+		}
+		.img_four:hover{
+			width:70px;
+			height: 70px;
+			transition-delay: 100ms;
+			transition-duration: 500ms;
+			transform: rotate(180deg);
+			transition-timing-function: ease-in-out;
+		}
+		
+		
+		.welcome{
+			width: 500px;
+			height: 400px;
+			position: absolute;
+			top: -10;
+			left: 513px;
+			z-index: 5;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 410px;
+			font-size: 48px;
+			font-weight: bold;
+			font-family:Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+			color:#101010;
+			opacity: 0;
+		}
+		html:hover .welcome{
+			animation-delay: 1s;
+			animation-duration: 800ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-name: welcome;
+		}
+		@keyframes welcome{
+			to{
+				opacity: 0.34;
+			}
+		}
+		
+		.mood_box{
+			width: 630px;
+			height: 72px;
+			float: left;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 72px;
+			margin-left: 480px;
+			margin-top: 10px;
+			opacity: 1;
+		}
+		.clam,.energetic,.dark,.cure{
+			float: left;
+			width: 70px;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 70px;
+			color: #101010;
+			opacity: 0.34;
+		}
+		.cure{
+			margin-left: 125px;
+		}
+		.dark{
+			margin-left: 100px;
+		}
+		.energetic{
+			margin-left: 75px;
+		}
+	
+	</style>
+</head>
+	<div class="big">
+		<div class="first">
+			<div class="first_circle_top"></div>
+			<div class="first_circle_bottom"></div>
+		</div>
+		<div class="two">
+			<div class="two_circle_top"></div>
+			<div class="two_circle_bottom"></div>
+		</div>
+		<div class="three">
+			<div class="three_circle_top"></div>
+			<div class="three_circle_bottom"></div>
+		</div>
+		<div class="four">
+			<div class="four_circle_top"></div>
+			<div class="four_circle_bottom"></div>
+		</div><br>
+		<div class="img_box">
+			<img class="img_first" src="新建文件夹 (1)/rehue表情1.png">
+			<img class="img_two" src="新建文件夹 (1)/rehue表情2.png">
+			<img class="img_three" src="新建文件夹 (1)/rehue表情3.png">
+			<img class="img_four" src="新建文件夹 (1)/rehue表情4.png">
+		</div><br>
+		<div class="mood_box">
+			<div class="clam">
+				Clam
+			</div>
+			<div class="energetic">
+				Energetic
+			</div>
+			<div class="cure">
+				Cure
+			</div>
+			<div class="dark">
+				Dark
+			</div>
+		</div>
+	</div>
+<body>
+</body>
+</html>

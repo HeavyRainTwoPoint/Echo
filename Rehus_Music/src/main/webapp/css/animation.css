@@ -1,0 +1,639 @@
+.body{
+			margin: 0;
+			padding: 0;
+		}
+		.body{
+			z-index: 0;
+		}
+/*		文字的样式*/
+		.p{
+			font-size: 40px;
+			font-family:"euphoria-script";
+			color: black;
+			font-weight: lighter;
+			text-align: center;
+			vertical-align: middle;
+			opacity: 0;
+			margin-bottom: 150px;
+		}
+		 .p{
+			animation-delay: 100ms;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+			animation-name: font;
+			animation-timing-function:ease-out;
+		}
+/*		文字的关键帧*/
+		@keyframes font{
+			from{
+				opacity: 0.2;
+			}
+			30%{
+				opacity: 0.5;
+			}
+			80%{
+				opacity: 0.8;
+			}
+			to{
+				opacity:1;
+				margin-top:180px;
+				text-shadow: 3px 3px 2px gray;
+			}
+			
+		}
+		
+/*		圆圈的样式*/
+		.circle{
+			width: 40px;
+			height:40px;
+			border-style: solid;
+			border-width: 1.5px;
+			border-color: black;
+			border-radius: 20px;
+			opacity: 0;
+			margin-top: 100px;
+			text-align: center;
+			vertical-align: middle;
+			margin: auto;
+			
+			font-family: "euphoria-script";
+			font-weight: lighter;
+			
+		}
+/*		圆圈的动画设置*/
+		.circle{
+			animation-delay: 400ms;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-name: circle;
+			animation-timing-function:ease-in-out;
+		}
+/*		圆圈的关键帧*/
+		@keyframes circle
+		{		
+			to{
+				opacity: 1;
+				width: 100px;
+				height:100px;
+				border-radius: 50px;
+			}
+		}
+		
+/*		圆圈里面的块的的样式*/
+		.span1{
+			margin-left: 1.5px;
+		}
+		.span1,.span2{
+			margin-top: 22px;
+			margin-right: 3px;
+			margin-bottom: 20px;
+			float: left;
+			opacity: 0;
+		}
+		.span1,.span2{
+			width: auto;
+			height: auto;
+			text-align: center;
+			vertical-align: middle;
+		}
+/*		块的动画设置*/
+		.span1{
+			animation-delay: 800ms;
+			animation-duration: 950ms;
+			animation-fill-mode: forwards;
+			animation-name: span1;
+			animation-timing-function:ease-in-out;
+		}
+		.span2{
+			animation-delay:800ms;
+			animation-duration: 950ms;
+			animation-fill-mode: forwards;
+			animation-name: span2;
+			animation-timing-function:ease-in-out;
+		}
+		.body{
+			animation-delay:2500ms;
+			animation-duration: 100ms;
+			animation-fill-mode: forwards;
+			animation-name: body;
+			animation-timing-function:ease-in-out;
+		}
+		@keyframes body{
+			to{
+				opacity: 0;
+			}
+		}
+		
+/*		块的关键帧*/
+		@keyframes span1
+		{
+			50%{
+				opacity: 1;
+				background-color: dimgrey;
+			}
+			to{
+				width: 15px;
+				height: 15px;
+				border-radius: 15px;
+				background-color: black;
+				margin-top: 25px;
+				margin-left: 18px;
+				margin-right: 18px;	
+				opacity: 1;	
+			}
+		}
+		@keyframes span2
+		{
+			50%{
+				opacity: 1;
+				background-color: dimgrey;
+			}
+			to{
+				width: 15px;
+				height: 15px;
+				border-radius: 15px;
+				background-color: black;
+				margin-top: 25px;
+				margin-left: 15px;
+				margin-right: 18px;	
+				opacity: 1;	
+			}
+		}
+		.span3{
+			width: auto;
+			height: auto;
+			opacity: 0;
+			margin-top: 0px;
+			border-radius: 25px;
+			text-align: center;
+			vertical-align: middle;
+			transform:rotate(90deg);
+			font-size: 40px;
+			font-weight:bolder;
+			
+		}
+		.span3{
+			animation-delay: 1.5s;
+			animation-duration: 500ms;
+			animation-fill-mode: forwards;
+			animation-name: span3;
+			animation-timing-function:ease-in;
+			opacity: 0;
+			transform: rotate(30deg);
+			
+		}
+		@keyframes span3{
+			to{
+				width: auto;
+				height: 10px;
+				opacity: 1;
+				margin-top: 10px;
+				border-radius: 100px;
+				transform:rotate(90deg);
+/*				background-color: black;*/
+				
+			}
+		}
+		
+		.span1:hover
+		{
+			
+			transform: scale(1.5);
+		}
+		.span2:hover
+		{
+			transform: scale3d(2,2,2);
+		}
+		.span3:hover
+		{
+			font-size: 30px;
+			
+		}
+		
+		/*---------------------------------------------------------------------------------*/
+		/*		最外面的大盒子*/
+				.big{
+					text-align: center;
+					vertical-align: middle;
+					position: absolute;
+					top: 0px;
+					margin: auto;
+					z-index: 1;
+					
+				}
+		/*		first~four为从左到右的四条柱子*/
+				.first{
+					width: 70px;
+					height: 320px;
+					border-radius: 28px;
+					background:linear-gradient(#107EB3,#71D9E5);
+					float: left;
+					margin-top: -150px;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 320px;
+					position: relative;
+					opacity: 0;
+				}
+		/*		first——circle代表柱子里的白圆，top为上面的，bottom为下面的，以此类推*/
+				.first_circle_top,.first_circle_bottom{
+					width: 40px;
+					height: 40px;
+					float: left;
+					background-color: white;
+					border-radius: 20px;
+					margin-top: 50px;
+					margin-left: 15px;
+				}
+				.first_circle_bottom{
+					margin-top: 140px;
+				}
+				.two{
+					width: 70px;
+					height: 280px;
+					border-radius: 28px;
+					background:linear-gradient(#FFB67E,#EC743E);
+					float: left;
+					margin-left: 50px;
+					margin-top: -150px;
+					text-align: center;
+					vertical-align: middle;
+					position: relative;
+					opacity: 0;
+				}
+				.two_circle_top,.two_circle_bottom{
+					width: 40px;
+					height: 40px;
+					float: left;
+					background-color: white;
+					border-radius: 20px;
+					margin-top: 50px;
+					margin-left: 15px;
+				}
+				.two_circle_bottom{
+					margin-top: 100px;
+				}
+				.three{
+					width: 70px;
+					height: 240px;
+					border-radius: 28px;
+					background:linear-gradient(#62DFAE,#555555);
+					float: left;
+					margin-left: 50px;
+					margin-top: -150px;
+					text-align: center;
+					vertical-align: middle;
+					position: relative;
+					opacity: 0;
+				}
+				.three_circle_top,.three_circle_bottom{
+					width: 40px;
+					height: 40px;
+					float: left;
+					background-color: white;
+					border-radius: 20px;
+					margin-top: 50px;
+					margin-left: 15px;
+				}
+				.three_circle_bottom{
+					margin-top: 60px;
+				}
+				.four{
+					width: 70px;
+					height: 200px;
+					border-radius: 28px;
+					background:linear-gradient(#05727F,#4CB1A6);
+					float: left;
+					margin-left: 50px;
+					margin-top: -150px;
+					text-align: center;
+					vertical-align: middle;
+					position: relative;
+					opacity: 0;
+				}
+				.four_circle_top,.four_circle_bottom{
+					width: 40px;
+					height: 40px;
+					float: left;
+					background-color: white;
+					border-radius: 20px;
+					margin-top: 50px;
+					margin-left: 15px;
+				}
+				.four_circle_bottom{
+					margin-top: 20px;
+				}
+				
+		/*		下面的表情按钮*/
+				.img_box{
+					width: 580px;
+					height: 72px;
+					vertical-align: middle;
+					text-align: center;
+					line-height: 72px;
+					margin: 0 auto;
+					margin-top: 840px;
+					opacity: 0;
+				}
+		/*		按顺序一二三四*/
+				.img_first,.img_two,.img_three,.img_four{
+					width: 70px;
+					float: left;
+					margin-top: 500px;
+				}
+				.img_two,.img_three,.img_four{
+					margin-left: 100px;
+				}
+				
+		/*		以下为动画设置*/
+		/*		设置参数以及设置关键帧，这里的名称对应盒子的名称*/
+				.first{
+					animation-delay: 2600ms;
+					animation-duration: 800ms;
+					animation-name: first;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease-in;
+				}
+				@keyframes first{
+					to{
+						width: 70px;
+						height: 320px;
+						border-radius: 28px;
+						background:linear-gradient(#107EB3,#71D9E5);
+						float: left;
+						margin-top: 50px;
+						text-align: center;
+						vertical-align: middle;
+						line-height: 320px;
+						opacity: 1;
+					}
+				}
+				
+				.two{
+					animation-delay: 2800ms;
+					animation-duration: 800ms;
+					animation-name: two;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease-out;
+				}
+				@keyframes two{
+					to{
+						width: 70px;
+						height: 280px;
+						border-radius: 28px;
+						background:linear-gradient(#FFB67E,#EC743E);
+						float: left;
+						margin-left: 50px;
+						margin-top: 70px;
+						text-align: center;
+						vertical-align: middle;
+						position: relative;
+						opacity: 1;
+					}
+				}
+				
+				.three{
+					animation-delay: 3000ms;
+					animation-duration: 800ms;
+					animation-name: three;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease-out;
+				}
+				@keyframes three
+				{
+					to{
+						width: 70px;
+						height: 240px;
+						border-radius: 28px;
+						background:linear-gradient(#62DFAE,#555555);
+						float: left;
+						margin-left: 50px;
+						margin-top: 90px;
+						text-align: center;
+						vertical-align: middle;
+						position: relative;
+						opacity: 1;
+					}
+				}
+				
+				.four{
+					animation-delay: 3200ms;
+					animation-duration: 800ms;
+					animation-name: four;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease-out;
+				}
+				@keyframes four
+				{
+					to{
+						width: 70px;
+						height: 200px;
+						border-radius: 28px;
+						background:linear-gradient(#05727F,#4CB1A6);
+						float: left;
+						margin-left: 50px;
+						margin-top: 110px;
+						text-align: center;
+						vertical-align: middle;
+						position: relative;
+						opacity: 1;
+					}
+				}
+				
+				.img_box{
+					animation-delay: 2600ms;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-name: img_box;
+				}
+				@keyframes img_box{
+					to{
+						margin-top:40px;
+						opacity: 1;
+					}
+				}
+				
+				.img_first{
+					animation-delay: 3200ms;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-name: img_first;
+				}
+				@keyframes img_first
+				{
+					to{
+						margin-top: 0px;
+					}
+				}
+				
+				.img_two{
+					animation-delay: 3100ms;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: ease-out;
+					animation-name: img_two;
+				}
+				@keyframes img_two
+				{
+					to{
+						margin-top: 0px;
+					}
+				}
+				
+				.img_three{
+					animation-delay: 2800ms;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-name: img_three;
+				}
+				@keyframes img_three
+				{
+					to{
+						margin-top: 0px;
+					}
+				}
+				
+				.img_four{
+					animation-delay: 2600ms;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-name: img_four;
+				}
+				@keyframes img_four
+				{
+					to{
+						margin-top: 0px;
+					}
+				}
+				
+				.img_first{
+					width:70px;
+					height: 70px;
+					transition-delay: 100ms;
+					transition-duration: 500ms;
+		/*			transform:rotate(360deg);*/
+					transition-timing-function: ease-in-out;
+					cursor: pointer;
+				}
+				.img_two{
+					width:70px;
+					height: 70px;
+					transition-delay: 100ms;
+					transition-duration: 3s;
+					transition-timing-function: ease-in-out;
+					cursor: pointer;
+				}
+				.img_three{
+					width:70px;
+					height: 70px;
+					transition-delay: 100ms;
+					transition-duration: 500ms;
+					transition-timing-function: ease-in-out;
+					cursor: pointer;
+				}
+				.img_four{
+					width:70px;
+					height: 70px;
+					transition-delay: 100ms;
+					transition-duration: 500ms;
+					transition-timing-function: ease-in-out;
+					cursor: pointer;
+				}
+				body{
+					width: 100%;
+					height: 100%;
+				}
+				#big{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+				}
+				#bigbtop{
+					display: block;
+					margin: 0 auto;
+					width: 450px;
+					float: left;
+					position: relative;
+				}
+				#NoMood{
+					width: 300px;
+					height: 60px;
+					display: block;
+					margin: 0 auto;
+				}
+				#NMoodx{
+					width: 100%;
+					height: 100%;
+					display: block;
+					border: 1px solid #E5E9EF;
+					font-size: 24px;
+					color: #00A1D6;
+					font-family: Ink Free;
+					text-decoration: none;
+					line-height: 60px;
+					border-radius: 30px;
+					outline: none;
+				}
+				.mood_box{
+					width: 580px;
+					height: 72px;
+					float: left;
+					vertical-align: middle;
+					text-align: center;
+					line-height: 72px;
+					margin: 0 auto;
+					margin-top: 10px;
+					opacity: 1;
+				}
+				.clam,.energetic,.dark,.cure{
+					float: left;
+					width: 70px;
+					font-size: 25px;
+					font-weight: bold;
+					text-align: center;
+					line-height: 70px;
+					color: #101010;
+					opacity: 0.34;
+				}
+				.cure{
+					margin-left: 125px;
+				}
+				.dark{
+					margin-left: 100px;
+				}
+				.energetic{
+					margin-left: 75px;
+				}
+				.welcome{
+					width: 500px;
+					height: 400px;
+					position: absolute;
+					left: -30px;
+					z-index: 5;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 410px;
+					font-size: 48px;
+					font-weight: bold;
+					font-family:Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+					color:#101010;
+					opacity: 0;
+				}
+				.welcome{
+					animation-delay: 3.5s;
+					animation-duration: 800ms;
+					animation-fill-mode: forwards;
+					animation-timing-function: linear;
+					animation-name: welcome;
+				}
+				@keyframes welcome{
+					to{
+						opacity: 0.34;
+					}
+				}

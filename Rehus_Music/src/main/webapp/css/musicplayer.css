@@ -1,0 +1,448 @@
+#dowebok{
+	width: 100%;
+	height: 100px;
+	display: block;
+	z-index: 100;
+	position: relative;
+}
+#player{
+	height: 100%;
+	z-index: 3;
+	position: relative;
+}
+#player-track{
+	position: absolute;
+    top: 0px;
+    right: 15px;
+    left: 15px;
+    padding: 13px 22px 10px 184px;
+    background-color: #fff7f7;
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s ease top;
+    z-index: 1;
+}
+#player-track.active {
+    top: -96px;
+}
+#album-name{
+	color: #54576f;
+    font-size: 17px;
+    font-weight: bold;
+}
+#track-name{
+	color: #acaebd;
+    font-size: 13px;
+    margin: 2px 0 13px 0;
+}
+#track-time{
+	height: 12px;
+    margin-bottom: 3px;
+    overflow: hidden;
+	display: flex;
+}
+#current-time{
+	color: #f86d92;
+    background-color: transparent;
+	font-size: 12px;
+	display: block;
+	width: 31px;
+	height: 14px;
+	border-radius: 10px;
+    transition: 0.3s ease all;
+	line-height: 14px;
+}
+#track-length{
+	color: #f86d92;
+    background-color: transparent;
+	margin-left: 173px;
+	line-height: 14px;
+	font-size: 11px;
+	display: block;
+	width: 31px;
+	height: 14px;
+	border-radius: 10px;
+	transition: 0.3s ease all;
+}
+#track-time.active #current-time,#track-time.active #track-length {
+    color: #f86d92;
+    background-color: transparent;
+}
+#s-area{
+	position: relative;
+    height: 4px;
+    border-radius: 4px;
+	background-color: #ffe8ee;
+    cursor: pointer;
+    display: block;
+}
+#ins-time{
+	position: absolute;
+    top: -29px;
+    color: #fff;
+    font-size: 12px;
+    white-space: pre;
+    padding: 5px 6px;
+    border-radius: 4px;
+	display: none;
+	background-color: #3b3d50;
+}
+#s-hover{
+	width: 0px;
+	background-color: #3b3d50;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 20;
+	height: 4px;
+	display: block;
+}
+#seek-bar{
+	content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	background-color: #fd6d94;
+    transition: 0.2s ease width;
+    z-index: 1;
+	border-radius: 4px;
+	width: 70%;
+}
+#player-content{
+	position: relative;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 30px 80px #656565;
+    border-radius: 15px 15px 0 0;
+    z-index: 2;
+	display: block;
+}
+#album-art{
+	position: absolute;
+    top: -40px;
+    width: 115px;
+    height: 115px;
+    margin-left: 40px;
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+    transition: 0.3s ease all;
+    box-shadow: 0 0 0 10px #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#album-art.active {
+    top: -60px;
+    box-shadow: 0 0 0 4px #fff7f7, 0 30px 50px -15px #afb7c1;
+}
+#icon-art{
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin: -10px auto 0 auto;
+    background-color: #d6dee7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px #fff;
+    z-index: 2;
+}
+#_1,#_2,#_3,#_4,#_5{
+	opacity: 0;
+    z-index: -1;
+	transition: 0.1s linear all;
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#album-art img.active{
+    opacity: 1;
+    z-index: 1;
+}
+#album-art.active img.active{
+    z-index: 1;
+    -webkit-animation: rotateAlbumArt 5s linear 0s infinite forwards;
+    animation: rotateAlbumArt 5s linear 0s infinite forwards;
+}
+
+@-webkit-keyframes rotateAlbumArt {
+    0% {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotateAlbumArt {
+    0% {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+#buffer-box{
+	position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 13px;
+    color: #1f1f1f;
+    font-size: 13px;
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px;
+    margin: -12px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.19);
+    opacity: 0;
+    z-index: 2;
+	transition: 0.1s linear all;
+}
+#album-art.buffering img {
+    opacity: 0.25;
+}
+#album-art.buffering img.active {
+    opacity: 0.8;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+#album-art.buffering #buffer-box {
+    opacity: 1;
+}
+#player-controls{
+	width: 250px;
+    height: 100%;
+    margin: 0 5px 0 141px;
+    float: right;
+    overflow: hidden;
+	display: flex;
+}
+.control{
+	width: 33.333%;
+    float: left;
+    padding: 12px 0;
+	display: block;
+}
+.buttonc{
+	width: 26px;
+    height: 26px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+	transition: 0.2s ease all;
+	display: block;
+}
+#play-previous:hover{
+	background: #D6D6DE;
+}
+#play-previous:hover>.fas.fa-backward{
+	background: url(../img/shangyishoub.png);
+}
+#play-pause-button:hover{
+	background: #D6D6DE;
+}
+#play-pause-button:hover>.fas.fa-play{
+	background: url(../img/bofangx2.png);
+}
+#play-pause-button:hover>.fas.fa-pause{
+	background: url(../img/zanting2.png);
+}
+#play-next:hover{
+	background: #D6D6DE;
+}
+#play-next:hover>.fas.fa-forward{
+	background: url(../img/xiayishoub.png);
+}
+.fas{
+	display: block;
+	width: 26px;
+	height: 26px;
+    color: #d6dee7;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1;
+	transition: 0.2s ease all;
+}
+.fas.fa-backward{
+	background: url(../img/shangyishou.png);
+}
+.fas.fa-play{
+	width: 27px;
+	height: 27px;
+	display: block;
+	background: url(../img/bofangx.png);
+}
+.fas.fa-pause{
+	width: 27px;
+	height: 27px;
+	display: block;
+	background: url(../img/zanting.png);
+}
+.fas.fa-forward{
+	background: url(../img/xiayishou.png);
+}
+
+#HideButton{
+	width: 320px;
+	height: 78px;
+	display: block;
+	position: absolute;
+	border-radius: 0 15px 15px 0;
+	background: #FFFFFF;
+	top: 20px;
+	left: 0px;
+	border: 1px solid #D6D6DE;
+	overflow: hidden;
+	transition: .2s all ease-in-out;
+}
+#HideButton.active{
+	left: 450px;
+}
+#ConButton{
+	width: 250px;
+	height: 100%;
+	display: block;
+	position: relative;
+	border-radius: 0 15px 15px 0;
+	background: #FFFFFF;
+	left: 60px;
+}
+.controlx{
+	width: 26%;
+    float: left;
+    padding: 12px 0;
+	display: block;
+}
+.controlx.yinliang{
+	width: 48%;
+	float: left;
+	padding: 12px 0;
+	display: block;
+}
+.buttoncx{
+	width: 18px;
+    height: 18px;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+	transition: 0.2s ease all;
+	display: block;
+}
+#play-yiliang{
+	width: 80px;
+	height: 18px;
+	padding: 18px;
+	background-color: #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.2s ease all;
+	display: block;
+}
+.fasx{
+	display: block;
+	width: 18px;
+	height: 18px;
+    color: #d6dee7;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1;
+	transition: 0.2s ease all;
+}
+.fasx.fa-yinliang{
+	background: url(../img/yinliang.png);
+	float: left;
+}
+.fasx.fa-shunxu{
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/shunxubofang.png);
+}
+.fasx.fa-suiji{
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/suijibofang.png);
+}
+.fasx.fa-xunhuan{
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/danquxunhuan.png);
+}
+.fasx.fa-white{
+	background: url(../img/collect-active.png);
+}
+#play-yiliang:hover>.fasx.fa-yinliang{
+	background: url(../img/yinliang2.png);
+}
+#play-yiliang:hover{
+	background: #D6D6DE;
+}
+#play-bofan:hover>.fasx.fa-shunxu{
+	background: url(../img/shunxubofang2.png);
+}
+#play-bofan:hover{
+	background: #D6D6DE;
+}
+#play-shoucan:hover>.fasx.fa-white{
+	background: url(../img/collect-active2.png);
+}
+#play-shoucan:hover{
+	background: #D6D6DE;
+}
+
+.all {      
+	width: 55px;
+	height: 4px;         
+	position: relative;
+	display: block;
+	float: left;
+	margin-top: 8px;
+	margin-left: 4px;
+}
+.all>p{
+	font-size: 12px;
+}
+.bar {      
+	width: 55px;      
+	height: 4px;      
+	border-radius: 10px;      
+	background: #aaa;      
+	position: absolute;      
+	top: 0;      
+	bottom: 0;      
+	left: 0;      
+	right: 0;      
+	margin: auto;      
+	cursor: pointer;    
+}    
+.box {      
+	width: 8px;      
+	height: 8px;      
+	background: #000;      
+	position: absolute;      
+	bottom: 0;      
+	top: 0;      
+	margin: auto 0;      
+	border-radius: 50%;      
+	cursor: pointer;      
+	transition: left 0.1s linear 0s;    
+}

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/home-style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script>
+        function da(photo_1,photo_2){
+            var a=document.getElementById(photo_1);
+            var b=document.getElementById(photo_2);
+            a.style.webkitAnimation="da 1s forwards";
+            b.style.display="block";
+        }
+        function xiao(photo_1,photo_2){
+            var a=document.getElementById(photo_1);
+            var b=document.getElementById(photo_2);
+            a.style.webkitAnimation="xiao 1s forwards";
+            b.style.display="none";
+        }
+    </script>
+</head>
+<body>
+<!--
+                                                           .
+                                     .;$$
+                        ....:;$$$$$$$   $
+                    ..;;;$$$            $:..
+                 .:$$$$$$               $$$$$:.
+               .;$$$$$$$3             $$$$$$$$$;.
+             .;$$$$$$$$$$      $$$$$$$;$$$$$$$$$$;.
+            ;$$$$$$$$$$$$$    $$;$$$$$$$$$$$$$$$$$$;
+           ;$$$$$$$$$$$$$$$$    $$$$$$$$$$$$$$$$$$$$$
+          $$$$$$$$$$$$$$$$$$$    $$$$$$$$$$$$$$$$$$$$$
+         :$$$$$$$$$$$$$$$$$$$$    $$$$$$$$$$$$$$$$$$$$;
+        .$$$$$$$$$$$$$$$$$$$$$$$   $$$$$$$$$$$$$$$$$$$$.
+        :$$$$$$$$$$$$$$$$$$$$$$$$   $$$$$$$$$$$$$$$$$$$:
+        ;$$$$$$$$$$$$$$$$$$$$$$$$$$  $$$$$$$$$$$$$$$$$$;
+        ;$$$$$$$$$$$$$$$$$$$$$$$$$$$   $$$$$$$$$$$$$$$$;
+        :$$$$$$$$$$$$$$$$$$             $$$$$$$$$$$$$$$:
+        .$$$$$$$$$$$$$$$                 $$$$$$$$$$$$$$.
+         ;$$$$$$$$$$$$$                   $$$$$$$$$$$$;
+          $$$$$$$$$$$$                     $$$$$$$$$$$
+           $$$$$$$$$$                      $$$$$$$$$$
+            ;$$$$$$$$                     $$$$$$$$$;
+             .$$$$$$$$                   $$$$$$$$$.
+               .$$$$$$$$               $$$$$$$$$:
+                 .;$$$$$$$$          $$$$$$$$;.
+                    .:$$$$$$$$$$$$$$$$$$$$:.
+                        ...:;;;;;;;;:...
+  指导老师：蔡京琛 主页：轩轩 专辑：然然 分类歌单：郑永皓 电台：谢一杨 票务：梁笑菊 交互：然然 后期：轩轩 数字专辑：何振洋 歌手：杨安轶
+                         QQ音乐团队倾情出品
+-->
+    <div class="A">
+        <div class="a">
+            <div class="a1">
+                <div class="a11">
+                    <a href="//y.qq.com"><img class="logo" src="images/logo.png"   alt="logo"></a>
+                </div>
+                <div class="a12">
+                    <ul>
+                        <li style="background-color: #31c27c"><a href="javascript:void(0)" title="音乐馆" style="color: white">音乐馆</a>
+                        </li>
+                       <li><a href="javascript:void(0)">我的音乐</a></li>
+                       <li><a href="javascript:void(0)">客户端</a></li>
+                       <li><a href="javascript:void(0)">音乐号</a></li>
+                       <li><a href="javascript:void(0)">VIP</a></li>
+                   </ul>
+                </div>
+                <div class="a13">
+                    <div >
+                        <div class="a131" >
+                            <input class="search_input" type="text" aria-label="请输入搜索内容" placeholder="搜索音乐、MV、歌单、用户" accesskey="s">
+                            <button class="search_btn" >
+                                <span>搜索</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="a14">
+                    <nav>
+                        <a  class="a140" href="登录.html">登录</a>
+                         <a class="a141" href="javascript:void(0)">开通绿钻豪华版</a>
+                        <a class="a142" href="javascript:void(0)">开通付费包</a>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="a2">
+                <nav>
+                    <a href="#">首页</a>
+                    <a href="歌手.html">歌手</a>
+                    <a href="zhuanji.html">专辑</a>
+                    <a href="分类歌单.html">分类歌单</a>
+                    <a href="diantai.html">电台</a>
+                    <a href="">MV</a>
+                    <a href="shuzizhuanji.html">数字专辑</a>
+                    <a href="piaowu.html">票务</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="B">
+        <div class="b">
+            <div class="b1">
+                <h2>
+                    歌单推荐
+                </h2>
+            </div>
+            <div class="b2">
+                <nav>
+                <a href="javascript:void(0)">为你推荐</a>
+                <a href="javascript:void(0)">KTV热歌</a>
+                <a href="javascript:void(0)">轻音乐</a>
+                <a href="javascript:void(0)">日语</a>
+                <a href="javascript:void(0)">官方歌单</a>
+                <a href="javascript:void(0)">情歌</a>
+                </nav>
+            </div>
+            <div class="b3">
+                <ul class="palylist__list slide__list">
+                    <li class="palylist__item slide__item">
+                        <div class="palylist__item_box">
+                            <div  "da('photo_a_0','photo_b_0')" "xiao('photo_a_0','photo_b_0')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_0" "da('photo_a_0','photo_b_0')" "xiao('photo_a_0','photo_b_0')" src="images/am1.jpg"  alt="">
+                                    <img id="photo_b_0" "da('photo_a_0','photo_b_0')" "xiao('photo_a_0','photo_b_0')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                            <h4 class="palylist__title">
+                                <span class="palylist__title_txt"><a href="#">冰冷氛围的科技电子</a></span>
+                            </h4>
+                            <div class="palylist__other">
+                                播放量：2.8万
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="palylist__item slide__item">
+                        <div class="palylist__item_box">
+                            <div  "da('photo_a','photo_b')" "xiao('photo_a','photo_b')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a" "da('photo_a','photo_b')" "xiao('photo_a','photo_b')" src="images/am2.jpg"  alt="">
+                                    <img id="photo_b" "da('photo_a','photo_b')" "xiao('photo_a','photo_b')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                            <h4 class="palylist__title">
+                                <span class="palylist__title_txt"><a href="#">加拿大铜管五重奏吹响「雪国号角」</a></span>
+                            </h4>
+                            <div class="palylist__other">
+                                播放量：4.0万
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="palylist__item slide__item">
+                        <div class="palylist__item_box">
+                            <div  "da('photo_a_1','photo_b_1')" "xiao('photo_a_1','photo_b_1')" class="palylist__cover">
+                                <a href="https://y.qq.com/n/yqq/playlist/4242003865.html/">
+                                    <img id="photo_a_1" "da('photo_a_1','photo_b_1')" "xiao('photo_a_1','photo_b_1')" src="images/am3.jpg"  alt="">
+                                    <img id="photo_b_1" "da('photo_a_1','photo_b_1')" "xiao('photo_a_1','photo_b_1')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                            <h4 class="palylist__title">
+                                <span class="palylist__title_txt"><a href="https://y.qq.com/n/yqq/playlist/4242003865.html/">月上柳梢头 | 散步听闲情古风</a></span>
+                            </h4>
+                            <div class="palylist__other">
+                                播放量：104.7万
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="palylist__item slide__item">
+                        <div class="palylist__item_box">
+                            <div  "da('photo_a_2','photo_b_2')" "xiao('photo_a_2','photo_b_2')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_2" "da('photo_a_2','photo_b_2')" "xiao('photo_a_2','photo_b_2')" src="images/am4.jpg"  alt="">
+                                    <img id="photo_b_2" "da('photo_a_2','photo_b_2')" "xiao('photo_a_2','photo_b_2')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                            <h4 class="palylist__title">
+                                <span class="palylist__title_txt"><a href="#">后摇与鱼｜群聊窥屏潜水必备</a></span>
+                            </h4>
+                            <div class="palylist__other">
+                                播放量：51.6万
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="palylist__item slide__item">
+                        <div class="palylist__item_box">
+                            <div  "da('photo_a_3','photo_b_3')" "xiao('photo_a_3','photo_b_3')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_3" "da('photo_a_3','photo_b_3')" "xiao('photo_a_3','photo_b_3')" src="images/am5.jpg"  alt="">
+                                    <img id="photo_b_3" "da('photo_a_3','photo_b_3')" "xiao('photo_a_3','photo_b_3')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                            <h4 class="palylist__title">
+                                <span class="palylist__title_txt"><a href="#">晚上泡个澡？我有Downtempo</a></span>
+                            </h4>
+                            <div class="palylist__other">
+                                播放量：43.2万
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="C">
+    <div class="c">
+        <div class="c11">
+            <h2 class="c111">精彩推荐</h2>
+        </div>
+        <div class="c12">
+            <div class="c121">
+                <a href="#"><img src="images/am6.jpg" alt=""></a>
+            </div>
+            <div class="c122">
+                <a href="#"><img src="images/am7.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="D">
+    <div class="d">
+        <h2 class="d1">新碟首发</h2>
+        <div class="d2">
+            <nav>
+                <a href="javascript:void(0)">内地</a>
+                <a href="javascript:void(0)">港台</a>
+                <a href="javascript:void(0)">欧美</a>
+                <a href="javascript:void(0)">韩国</a>
+                <a href="javascript:void(0)">日本</a>
+                <a href="javascript:void(0)">更多</a>
+            </nav>
+        </div>
+        <div class="d3">
+            <ul class="d31">
+                <li class="d311">
+                    <div class="">
+                        <div class="z1">
+                            <div  "da('photo_a_4','photo_b_4')" "xiao('photo_a_4','photo_b_4')" class="palylist__cover">
+                                <a href="https://y.qq.com/n/yqq/album/001F3wHD1gp0IK.html/">
+                                    <img id="photo_a_4" "da('photo_a_4','photo_b_4')" "xiao('photo_a_4','photo_b_4')" src="images/am8.jpg"  alt="">
+                                    <img id="photo_b_4" "da('photo_a_4','photo_b_4')" "xiao('photo_a_4','photo_b_4')" src="images/play.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="https://y.qq.com/n/yqq/album/001F3wHD1gp0IK.html/">最苦的甜</a>
+                        </h4>
+                        <div class="z2"><a href="#">胡夏</a></div>
+                    </div>
+                </li>
+                <li class="d311 ">
+                        <div class="">
+                            <div class="z1 ">
+                                <div  "da('photo_a_5','photo_b_5')" "xiao('photo_a_5','photo_b_5')" class="palylist__cover">
+                                    <a href="javascript:void(0)">
+                                        <img id="photo_a_5" "da('photo_a_5','photo_b_5')" "xiao('photo_a_5','photo_b_5')" src="images/am9.jpg"  alt="">
+                                        <img id="photo_b_5" "da('photo_a_5','photo_b_5')" "xiao('photo_a_5','photo_b_5')" src="images/play.png" alt="">
+
+                                    </a>
+                                </div>
+                            </div>
+                            <h4 class="z3">
+                                <a href="#">没有理想何必远方</a></h4>
+                            <div class="z2"><a href="3">虎二</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_6','photo_b_6')" "xiao('photo_a_6','photo_b_6')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_6" "da('photo_a_6','photo_b_6')" "xiao('photo_a_6','photo_b_6')" src="images/am10.jpg"  alt="">
+                                    <img id="photo_b_6" "da('photo_a_6','photo_b_6')" "xiao('photo_a_6','photo_b_6')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">Pull Me Up</a></h4>
+                        <div class="z2"><a href="#">张靓颖</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_7','photo_b_7')" "xiao('photo_a_7','photo_b_7')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_7" "da('photo_a_7','photo_b_7')" "xiao('photo_a_7','photo_b_7')" src="images/am11.jpg"  alt="">
+                                    <img id="photo_b_7" "da('photo_a_7','photo_b_7')" "xiao('photo_a_7','photo_b_7')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">十大华语金曲II</a></h4>
+                        <div class="z2"><a href="#">孙露</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_8','photo_b_8')" "xiao('photo_a_8','photo_b_8')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_8" "da('photo_a_8','photo_b_8')" "xiao('photo_a_8','photo_b_8')" src="images/am12.jpg"  alt="">
+                                    <img id="photo_b_8" "da('photo_a_8','photo_b_8')" "xiao('photo_a_8','photo_b_8')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">别找我麻烦</a></h4>
+                        <div class="z2"><a href="#">封茗</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_9','photo_b_9')" "xiao('photo_a_9','photo_b_9')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_9" "da('photo_a_9','photo_b_9')" "xiao('photo_a_9','photo_b_9')" src="images/am13.jpg"  alt="">
+                                    <img id="photo_b_9" "da('photo_a_9','photo_b_9')" "xiao('photo_a_9','photo_b_9')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">红尘来去一场梦</a></h4>
+                        <div class="z2"><a href="#">魏新雨</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_10','photo_b_10')" "xiao('photo_a_10','photo_b_10')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_10" "da('photo_a_10','photo_b_10')" "xiao('photo_a_10','photo_b_10')" src="images/am14.jpg"  alt="">
+                                    <img id="photo_b_10" "da('photo_a_10','photo_b_10')" "xiao('photo_a_10','photo_b_10')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">卓雅</a></h4>
+                        <div class="z2"><a href="#">海来阿木</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_11','photo_b_11')" "xiao('photo_a_11','photo_b_11')" class="palylist__cover">
+                                <a href="https://y.qq.com/n/yqq/album/001hb5Nj3cW19g.html/">
+                                    <img id="photo_a_11" "da('photo_a_11','photo_b_11')" "xiao('photo_a_11','photo_b_11')" src="images/am15.jpg"  alt="">
+                                    <img id="photo_b_11" "da('photo_a_11','photo_b_11')" "xiao('photo_a_11','photo_b_11')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="https://y.qq.com/n/yqq/album/001hb5Nj3cW19g.html/">灯火人间</a></h4>
+                        <div class="z2"><a href="#">赵方婧</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_12','photo_b_12')" "xiao('photo_a_12','photo_b_12')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_12" "da('photo_a_12','photo_b_12')" "xiao('photo_a_12','photo_b_12')" src="images/am16.jpg"  alt="">
+                                    <img id="photo_b_12" "da('photo_a_12','photo_b_12')" "xiao('photo_a_12','photo_b_12')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">拜拜拜</a></h4>
+                        <div class="z2"><a href="#">季彦霖</a></div></div></li>
+                <li class="d311 ">
+                    <div class="">
+                        <div class="z1 ">
+                            <div  "da('photo_a_17','photo_b_17')" "xiao('photo_a_17','photo_b_17')" class="palylist__cover">
+                                <a href="javascript:void(0)">
+                                    <img id="photo_a_17" "da('photo_a_17','photo_b_17')" "xiao('photo_a_17','photo_b_17')" src="images/am17.jpg"  alt="">
+                                    <img id="photo_b_17" "da('photo_a_17','photo_b_17')" "xiao('photo_a_17','photo_b_17')" src="images/play.png" alt="">
+
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="z3">
+                            <a href="#">哪吒闹</a></h4>
+                        <div class="z2"><a href="#">大张伟</a></div></div></li>
+
+
+
+            </ul>
+</div>
+    </div>
+</div>
+<div class="E">
+    <div class="e">
+        <div class="e1">
+            <h2>排行榜</h2>
+        </div>
+        <div class="e2">
+            <ul class="e21">
+                <li class="z11">
+                    <div class="z111">
+                        <h4>巅峰榜</h4>
+                        <h3><a href="#">流行指数</a></h3>
+                        <div class="e211">
+                            <div class="e211a">
+                                <div class="e211a_1">1</div>
+                                <div class="e211a_2"><a href="#">我们</a></div>
+                                <div class="e211a_3"><a href="#">吴青峰</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">2</div>
+                                <div class="e211a_2"><a href="#">你的爱情</a></div>
+                                <div class="e211a_3"><a href="#">逃跑计划</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">3</div>
+                                <div class="e211a_2"><a href="#">要死就一定死在你手里</a></div>
+                                <div class="e211a_3"><a href="#">杨坤</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="z12">
+                    <div class="z111">
+                        <h4>巅峰榜</h4>
+                        <h3><a href="#">热歌</a></h3>
+                        <div class="e211">
+                            <div class="e211a">
+                                <div class="e211a_1">1</div>
+                                <div class="e211a_2"><a href="https://y.qq.com/n/yqq/song/002krvKI4Jgvq9.html/">知否知否</a></div>
+                                <div class="e211a_3"><a href="#">胡夏/郁可唯</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">2</div>
+                                <div class="e211a_2"><a href="#">不为谁而作的歌</a></div>
+                                <div class="e211a_3"><a href="#">林俊杰</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">3</div>
+                                <div class="e211a_2"><a href="https://y.qq.com/n/yqq/album/001mTkmb4GJlh4.html/">光年之外</a></div>
+                                <div class="e211a_3"><a href="#">G.E.M 邓紫棋</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="z13">
+                    <div class="z111">
+                        <h4>巅峰榜</h4>
+                        <h3><a href="#">新歌</a></h3>
+                        <div class="e211">
+                            <div class="e211a">
+                                <div class="e211a_1">1</div>
+                                <div class="e211a_2"><a href="#">深渊</a></div>
+                                <div class="e211a_3"><a href="#">谢霆锋/王嘉尔</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">2</div>
+                                <div class="e211a_2"><a href="#">Hellow My Love</a></div>
+                                <div class="e211a_3"><a href="#">Westlife</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">3</div>
+                                <div class="e211a_2"><a href="#">一半人生</a></div>
+                                <div class="e211a_3"><a href="#">阿信</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="z14">
+                    <div class="z111">
+                        <h4>巅峰榜</h4>
+                        <h3><a href="#">欧美</a></h3>
+                        <div class="e211">
+                            <div class="e211a">
+                                <div class="e211a_1">1</div>
+                                <div class="e211a_2"><a href="#">Hellow My Love</a></div>
+                                <div class="e211a_3"><a href="#">Westlife</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">2</div>
+                                <div class="e211a_2"><a href="#">Dancing With...</a></div>
+                                <div class="e211a_3"><a href="#">Sam Smith/Normani</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">3</div>
+                                <div class="e211a_2"><a href="#">No Place</a></div>
+                                <div class="e211a_3"><a href="#">Backstreet Boys</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="z15">
+                    <div class="z111">
+                        <h4>巅峰榜</h4>
+                        <h3><a href="#">韩国</a></h3>
+                        <div class="e211">
+                            <div class="e211a">
+                                <div class="e211a_1">1</div>
+                                <div class="e211a_2"><a href="#">I'M OK</a></div>
+                                <div class="e211a_3"><a href="#">iKON</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">2</div>
+                                <div class="e211a_2"><a href="#">우린 어쩌면</a></div>
+                                <div class="e211a_3"><a href="#">Eddy Kim</a></div>
+                            </div>
+                            <div class="e211a">
+                                <div class="e211a_1">3</div>
+                                <div class="e211a_2"><a href="#">벌써 12시</a></div>
+                                <div class="e211a_3"><a href="#">金请夏</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--<ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>-->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/am18.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/am19.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/am20.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/am21.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/am22.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>-->
+</div>
+<div class="footer">
+    <div class="section_inner">
+    <div class="footer_info">
+        <div class="footer_download">
+            <h3 class="footer_tit">下载QQ音乐客户端</h3>
+            <ul class="footer_download_list">
+                <li class="footer_download_list_item"><a href="//y.qq.com/download/"><i class="icon_qm_pc"><span class="icon_txt">QQ音乐</span></i>PC版</a></li>
+                <li class="footer_download_list_item"><a href="//y.qq.com/download/"><i class="icon_qm_mac"><span class="icon_txt">QQ音乐</span></i>Mac版</a></li>
+                <li class="footer_download_list_item"><a href="//y.qq.com/download/"><i class="icon_qm_android"><span class="icon_txt">QQ音乐</span></i>Android版</a></li>
+                <li class="footer_download_list_item"><a href="//y.qq.com/download/"><i class="icon_qm_iphone"><span class="icon_txt">QQ音乐</span></i>iPhone版</a></li>
+            </ul>
+        </div>
+        <div class="footer_product">
+            <h3 class="footer_tit">特色产品</h3>
+            <ul class="footer_product_list">
+                <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://kg.qq.com/?pgv ref=qqmusic.y.topmeau"><i class="icon_qm_kg"><span class="icon_txt"></span></i>全民K歌</a></li>
+                <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://kg.qq.com/?pgv ref=qqmusic.y.topmeau"><i class="icon_qm_ss"><span class="icon_txt"></span></i>Super Sound</a></li>
+                <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://kg.qq.com/?pgv ref=qqmusic.y.topmeau"><i class="icon_qm_qp"><span class="icon_txt"></span></i>QPlay</a></li>
+                <li class="footer_product_list__item "><a href="http://kg.qq.com/?pgv ref=qqmusic.y.topmeau">车载互联</a></li>
+                <li class="footer_product_list__item "><a href="http://kg.qq.com/?pgv ref=qqmusic.y.topmeau">QQ演出</a></li>
+            </ul>
+        </div>
+        <div class="footer_link">
+            <h3 class="footer_tit">合作链接</h3>
+            <ul class="footer_link_list">
+                <li class="footer_link_list__item"><a href="#">CJ ENM</a></li>
+                <li class="footer_link_list__item"><a href="#">腾讯视频</a></li>
+                <li class="footer_link_list__item"><a href="#">手机QQ空间</a></li>
+                <li class="footer_link_list__item"><a href="#">最新版QQ</a></li>
+                <li class="footer_link_list__item"><a href="#">腾讯社交广告</a></li>
+                <li class="footer_link_list__item"><a href="#">电脑管家</a></li>
+                <li class="footer_link_list__item"><a href="#">QQ浏览器</a></li>
+                <li class="footer_link_list__item"><a href="#">腾讯微云</a></li>
+                <li class="footer_link_list__item"><a href="#">腾讯云</a></li>
+                <li class="footer_link_list__item"><a href="#">企鹅FM</a></li>
+                <li class="footer_link_list__item"><a href="#">智能电视网</a></li>
+                <li class="footer_link_list__item"><a href="#">当贝市场</a></li>
+            </ul>
+        </div>
+        <div class="footer_platform">
+            <h3 class="footer_tit">开放平台</h3>
+            <ul class="footer_platform_list">
+                <li class="footer_platform_list__item"><a href="#">腾讯音乐人平台</a></li>
+                <li class="footer_platform_list__item"><a href="#">音乐号认证</a></li>
+                <li class="footer_platform_list__item"><a href="#">机构入驻</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <p>
+            <a href="javascript:void(0)">关于腾讯</a>|
+            <a href="javascript:void(0)">About Tencent</a>|
+            <a href="javascript:void(0)">服务条款</a>|
+            <a href="javascript:void(0)">用户服务协议</a>|
+            <a href="javascript:void(0)">隐私政策</a>|
+            <a href="javascript:void(0)">权利声明</a>|
+            <a href="javascript:void(0)">广告服务</a>|
+            <a href="javascript:void(0)">腾讯招聘</a>|
+            <a href="javascript:void(0)">客服中心</a>|
+            <a href="javascript:void(0)">网站导航</a>
+        </p>
+        <p>
+            Copyright&copy;1998-
+            <script type="text/javascript"></script>
+            2019 Tencent
+            <a target="_blank" href="javascript:void(0)">All Rights Reserved</a>
+        </p>
+        <p>
+            腾讯公司
+            <a target="_blank" href="javascript:void(0)">版权所有</a>
+            <a target="_blank" href="javascript:void(0)">腾讯网络文化经营许可证</a>
+        </p>
+    </div>
+    </div>
+    P
+</div>
+</body>
+</html>
